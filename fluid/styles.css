@@ -1,0 +1,125 @@
+body{
+    font-family: "Times NEw Roman", "San-serif", "Arial";
+    font-size: 14px;
+    background-color: darksalmon;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+header{
+    text-align: center;
+    padding: 20px;
+}
+header h1{
+    margin-top: 0px;
+    margin-bottom: 0.3em;
+    font-size: 4em;
+    font-family: "Lucida Console", "Monaco", monospace;
+}
+nav ul{
+    font-size: 20px;
+    font-family: "Gill Sans", "Sans-serif", "Arial";
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+nav li a{
+    float:left;
+    display: block;
+    color: black;
+    border: 3px solid transparent;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none
+}
+nav li a:hover{
+    background-color: lightgrey;
+    border-color: blanchedalmond;
+}
+nav li a.current{
+    background-color: skyblue;
+}
+.container {
+    max-width: 80em;
+    margin: 0 auto;
+    padding: 20px;
+}
+p{
+    font-size: 1.4em;
+    line-height: 120%;
+}
+footer{
+    text-align: center;
+}
+.clearfix:before,
+.clearfix:after {
+    content:'';
+    display:table;
+}
+.clearfix:after {
+    clear: both;
+}
+figure{
+    margin: 0;
+    padding: 20px;
+}
+figure img{
+    width: 100%;
+    display: block;
+}
+
+.caption-grid .gallery{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+.caption-grid figure {
+    margin: 0 0 20px;
+    width: 100%;
+    position: relative;
+}
+.caption-grid figcaption{
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    border-style: none;
+    position: absolute;
+    border-width: 2px 2px 2px 2px;
+    width: 100%;
+    bottom: 20px;
+}
+.caption-grid figure img{
+    border-width: 5px 5px 5px 5px;
+}
+.caption-grid figcaption,
+.caption-grid figure img{
+    border-style: none;
+    box-sizing: border-box;
+}
+
+.column-grid .gallery{
+    -webkit-columns: 3;
+    -moz-columns: 3;
+    columns: 3;
+}
+.column-grid figure{
+    margin: 0 0 20px;
+    width: 100%;
+}
+.column-grid figure img{
+    border: 15px solid rgba(255, 255, 255, 0.5);
+    box-sizing: border-box;
+}
+
+.float-grid figure {
+    width: 20%;
+    float: left;
+    margin: 0;
+}
+
+.float-grid figure:nth-of-type(4n+1){
+    clear: left;
+}
